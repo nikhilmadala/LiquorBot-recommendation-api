@@ -30,7 +30,7 @@ def recommend():
 def location_query():
     params = request.args.to_dict()
 
-    sql = "SELECT Location FROM RETAIL.LIQUOR WHERE Type='%s'"
+    sql = "SELECT Location FROM rasa_recommendation_API_DB.LIQUOR WHERE Type='%s'"
     cur.execute(sql % params['type'])
     a=[]
     # import pdb; pdb.set_trace()
@@ -43,6 +43,6 @@ def location_query():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
 
