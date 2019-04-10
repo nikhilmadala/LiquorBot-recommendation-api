@@ -57,8 +57,6 @@ def recommend():
     # 3   "Shelf 49"
     # status  200
 
-#  http://127.0.0.1:6004/recommend/?domain=Liquor&age=Young&type=Whisky&budget=5000+
-
 
 if __name__ == '__main__':
     app.run(port=6004,host="0.0.0.0")
